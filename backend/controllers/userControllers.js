@@ -50,8 +50,11 @@ export const registerUser = asyncHandler(async(req,res) => {
 });
 
 export const logoutUser = asyncHandler(async(req,res) => {
-
-  res.status(200).json({message: 'Logout User'})
+  res.cookie('jwt', '', {
+    httpOnly: true,
+    expires: new Date(0)
+  })
+  res.status(200).json({message: 'User Logged Out'})
 });
 
 export const getUserProfile = asyncHandler(async(req,res) => {
