@@ -1,9 +1,12 @@
-import Header from "./components/Header"
+import Header from "./components/Header";
+import Home from "./screens/Home";
+
+
 const App = () =>  {
   return (
     <>
     <Header />
-    <h1>My App</h1>
+    <Home />
     </>
   )
    
