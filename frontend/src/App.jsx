@@ -1,12 +1,15 @@
+import { Outlet } from "react-router-dom";
+import { Container } from "react-bootstrap";
 import Header from "./components/Header";
-import Home from "./screens/Home";
 
 
 const App = () =>  {
   return (
     <>
     <Header />
-    <Home />
+    <Container className="my-2">
+        <Outlet />
+    </Container>
     </>
   )
    
