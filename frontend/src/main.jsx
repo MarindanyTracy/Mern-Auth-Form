@@ -5,12 +5,14 @@ import App from './App.jsx'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './screens/Home.jsx';
 import Login from './screens/Login.jsx';
+import Register from './screens/Register.jsx';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<App />}>
     <Route path="/" index={true} element={<Home />} />
     <Route path="/login" element={<Login />} />
+    <Route path="/register" element={<Register />} />
     </Route>
   )
 )
